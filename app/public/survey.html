@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,48 +14,48 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="/home.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/api/friends">API Friends List</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Survey</a>
-      </li>
-    </ul>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/api/friends">API Friends List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Survey</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">First and last name</span>
+    </div>
+    <input type="text" class="form-control" id="firstnamefield">
+    <input type="text" class="form-control" id="lastnamefield">
+
   </div>
-</nav>
 
-<div class="input-group">
-  <div class="input-group-prepend">
-    <span class="input-group-text" >First and last name</span>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Picture Link</span>
+    </div>
+    <input type="text" class="form-control" id="picturelink">
+
   </div>
-  <input type="text" class="form-control" id="firstnamefield">
-  <input type="text" class="form-control" id="lastnamefield">
 
-</div>
-
-<div class="input-group">
-  <div class="input-group-prepend">
-    <span class="input-group-text" >Picture Link</span>
-  </div>
-  <input type="text" class="form-control" id="picturelink">
-
-</div>
-
-<div class = "Question">
-  <h3> I am very outgoing! </h3>
-<div class="input-group mb-3 col-sm-3" >
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">Options</label>
-  </div>
-  <select class="custom-select" id="q1">
+  <div class="Question">
+    <h3> I am very outgoing! </h3>
+    <div class="input-group mb-3 col-sm-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+      </div>
+      <select class="custom-select" id="q1">
     <option selected value = "null">Choose...</option>
     <option value="1">Disagree!</option>
     <option value="2">Disagree Somewhat</option>
@@ -62,16 +63,16 @@
     <option value="4">Agree Somewhat</option>
     <option value="5">Agree Strongly!</option>
   </select>
-</div>
-</div>
-
-<div class = "Question">
-  <h3> I prefer: </h3>
-<div class="input-group mb-3 col-sm-3" >
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+    </div>
   </div>
-  <select class="custom-select" id="q2">
+
+  <div class="Question">
+    <h3> I prefer: </h3>
+    <div class="input-group mb-3 col-sm-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+      </div>
+      <select class="custom-select" id="q2">
     <option selected value = "null">Choose...</option>
     <option value="1">Swelteringly Hot Weather</option>
     <option value="2">Hot Weather</option>
@@ -79,32 +80,32 @@
     <option value="4">Brisk Weather </option>
     <option value="5">Frigid Weather </option>
   </select>
-</div>
-</div>
-
-<div class = "Question">
-  <h3> I prefer sitting at home calculating formulated and intricate plots to kill my enemies to engaging in open war </h3>
-<div class="input-group mb-3 col-sm-3" >
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+    </div>
   </div>
-  <select class="custom-select" id="q3">
+
+  <div class="Question">
+    <h3> I prefer sitting at home calculating formulated and intricate plots to kill my enemies to engaging in open war </h3>
+    <div class="input-group mb-3 col-sm-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+      </div>
+      <select class="custom-select" id="q3">
     <option selected value = "null">Choose...</option>
     <option value="1">Agree!</option>
     <option value="2">Impartial, as long as my enemies die</option>
     <option value="3">Disagree!</option>
 
   </select>
-</div>
-</div>
-
-<div class = "Question">
-  <h3> I love to  </h3>
-<div class="input-group mb-3 col-sm-3" >
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+    </div>
   </div>
-  <select class="custom-select" id="q4">
+
+  <div class="Question">
+    <h3> I love to  </h3>
+    <div class="input-group mb-3 col-sm-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+      </div>
+      <select class="custom-select" id="q4">
     <option selected value = "null">Choose...</option>
     <option value="1">Attend Weddings!</option>
     <option value="2">Play Music</option>
@@ -112,16 +113,16 @@
     <option value="4">Drink </option>
     <option value="5">Fight </option>
   </select>
-</div>
-</div>
-
-<div class = "Question">
-  <h3> My favorite food is:  </h3>
-<div class="input-group mb-3 col-sm-3" >
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+    </div>
   </div>
-  <select class="custom-select" id="q5">
+
+  <div class="Question">
+    <h3> My favorite food is:  </h3>
+    <div class="input-group mb-3 col-sm-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+      </div>
+      <select class="custom-select" id="q5">
     <option selected value = "null">Choose...</option>
     <option value="1">Pies</option>
     <option value="2">Aurochs</option>
@@ -129,32 +130,32 @@
     <option value="4">Wine</option>
     <option value="5">Chickens</option>
   </select>
-</div>
-</div>
-
-
-<div class = "Question">
-  <h3> My drink of choice is: </h3>
-<div class="input-group mb-3 col-sm-3" >
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+    </div>
   </div>
-  <select class="custom-select" id="q6">
+
+
+  <div class="Question">
+    <h3> My drink of choice is: </h3>
+    <div class="input-group mb-3 col-sm-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+      </div>
+      <select class="custom-select" id="q6">
     <option selected value = "null">Choose...</option>
     <option value="1">Wine</option>
     <option value="2">Dark Beer</option>
     <option value="3">I do not partake</option>
   </select>
-</div>
-</div>
-
-<div class = "Question">
-  <h3> I spend most of my time </h3>
-<div class="input-group mb-3 col-sm-3" >
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+    </div>
   </div>
-  <select class="custom-select" id="q7">
+
+  <div class="Question">
+    <h3> I spend most of my time </h3>
+    <div class="input-group mb-3 col-sm-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+      </div>
+      <select class="custom-select" id="q7">
     <option selected value = "null">Choose...</option>
     <option value="1">Reading</option>
     <option value="2">Fighting</option>
@@ -162,17 +163,17 @@
     <option value="4">Ruling</option>
     <option value="5">Arguinig</option>
   </select>
-</div>
-</div>
-
-
-<div class = "Question">
-  <h3> I fight best  </h3>
-<div class="input-group mb-3 col-sm-3" >
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+    </div>
   </div>
-  <select class="custom-select" id="q8">
+
+
+  <div class="Question">
+    <h3> I fight best  </h3>
+    <div class="input-group mb-3 col-sm-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+      </div>
+      <select class="custom-select" id="q8">
     <option selected value = "null">Choose...</option>
     <option value="1">With my words</option>
     <option value="2">On horseback</option>
@@ -180,16 +181,16 @@
     <option value="4">Lone wolfing it</option>
     <option value="5">Riding my dragon and making others fight for me </option>
   </select>
-</div>
-</div>
-
-<div class = "Question">
-  <h3> My favorite animal is a </h3>
-<div class="input-group mb-3 col-sm-3" >
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+    </div>
   </div>
-  <select class="custom-select" id="q9">
+
+  <div class="Question">
+    <h3> My favorite animal is a </h3>
+    <div class="input-group mb-3 col-sm-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+      </div>
+      <select class="custom-select" id="q9">
     <option selected value = "null">Choose...</option>
     <option value="1">Wolf</option>
     <option value="2">Lion</option>
@@ -197,16 +198,16 @@
     <option value="4">Dog</option>
     <option value="5">Kraken</option>
   </select>
-</div>
-</div>
-
-<div class = "Question">
-  <h3> My priority is </h3>
-<div class="input-group mb-3 col-sm-3" >
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+    </div>
   </div>
-  <select class="custom-select" id="q10">
+
+  <div class="Question">
+    <h3> My priority is </h3>
+    <div class="input-group mb-3 col-sm-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+      </div>
+      <select class="custom-select" id="q10">
     <option selected value = "null">Choose...</option>
     <option value="1">to be seen as honorable no matter the outcome</option>
     <option value="2">to win no matter the cost</option>
@@ -215,93 +216,107 @@
     <option value="5">to do the right thing </option>
 
   </select>
-</div>
-</div>
+    </div>
+  </div>
 
 
-<button type="button" class="btn btn-primary" id = "submit">Find Friend!</button>
+  <button type="button" class="btn btn-primary" id="submit">Find Friend!</button>
 
 
 
 
-<!-- Java files -->
+  <!-- Java files -->
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery.js"></script>
 </body>
+
 </html>
 
-<script type = "text/javascript">
+<script type="text/javascript">
 
-var previousfriends;
+//get function to pull api info
+var answers = []
+var scores = [];
+var differences = [];
+
 $.get("/api/friends", function(data) {
+  console.log("data length" + data.length);
   console.log(data);
-  
+  for (var k = 0; k < data.length; k++) {
+
+    scores.push(data[k].questions);
+  }
+
+
+console.log("Scores length" + scores.length);
+  for (var j = 0; j < scores.length; j++) {
+    scores[k] = parseInt(scores[k]);
+  }
+  //   var totalDifference = Math.abs(newfriend.questions - scores[j]);
+  //   differences.push(totalDifference[j]);
+  //
+  // }
+
 });
 
-$("#submit").on("click", function(event){
-  event.preventDefault();
-  var answers = [
-    answer1 = $("#q1").val().trim(),
-    answer2 = $("#q2").val().trim(),
-    answer3 = $("#q3").val().trim(),
-    answer4 = $("#q4").val().trim(),
-    answer5 = $("#q5").val().trim(),
-    answer6 = $("#q6").val().trim(),
-    answer7 = $("#q7").val().trim(),
-    answer8 = $("#q8").val().trim(),
-    answer9 = $("#q9").val().trim(),
-    answer10 = $("#q10").val().trim()
-
-  ]
-  var newfriend = {
-    name: $("#firstnamefield").val().trim() + " " + $("#lastnamefield").val().trim(),
-    picturelink: $("#picturelink").val().trim(),
-    questions: JSON.stringify(answers)
-  }
-  $("#firstnamefield").val("");
-  $("#lastnamefield").val("");
-  $("#picturelink").val("");
-  // $("#q1").val("null");
-  // $("#q2").val("Choose...");
-
-  for (var i = 1; i < 11; i ++){
-    var id = "#q" + i;
-
-    $(id).val("null");
-  }
-  console.log(newfriend);
+console.log("Scores array of questions from friends:");
+console.log(scores);
+// console.log("Differences");
+// console.log(differences);
 
 
-  // $.get("/api/friends", function(data) {
-  //
-  //   for (var k = 0; k < data.length; k++){
-  //     console.log(data[k].questions);
-  //     for(var j = 0; j < newfriend.questions.length; j ++){
-  //      var totalDifference +=Math.abs(newfriend.questions[j] - data[k].questions[j]);
-  //       console.log(totalDifference);
-  //     }
-  //
-  //   }
-  // });
+
+  $("#submit").on("click", function(event) {
+    event.preventDefault();
 
 
-  $.post("/api/friends", newfriend,
-  function(data){
-    if(data){
-      alert("Added!");
 
+    //for loop to get values from questions and push them into an answers array for newfriend object
+
+    for (var i = 1; i < 11; i++) {
+      var id = "#q" + i;
+
+      answers.push(parseInt($(id).val().trim()));
+      $(id).val("null");
     }
-    else{
-      alert("Something went wrong...");
+    console.log("Answersarray:");
+    console.log(answers);
+
+    //create newfriend object
+    var newfriend = {
+      name: $("#firstnamefield").val().trim() + " " + $("#lastnamefield").val().trim(),
+      picturelink: $("#picturelink").val().trim(),
+      questions: answers
     }
-  });
+
+    //blank out fields
+    $("#firstnamefield").val("");
+    $("#lastnamefield").val("");
+    $("#picturelink").val("");
+
+
+    console.log("New Friend Object:");
+    console.log(newfriend);
 
 
 
-})
 
 
+
+    $.post("/api/friends", newfriend,
+      function(data) {
+        if (data) {
+          alert("Added!");
+
+        } else {
+          alert("Something went wrong...");
+        }
+      });
+
+
+
+  })
 </script>

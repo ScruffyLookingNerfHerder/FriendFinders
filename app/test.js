@@ -3,7 +3,7 @@ var data= [
   {
     "name": "Tyrion Lannister",
     "picturelink": "https://cdn.80.lv/80.lv/uploads/2017/07/claudio-clemente-claudioclemente-tyrion-render-3dworldmagazine-11.jpg",
-    "questions[]": [
+    "questions": [
       "5",
       "2",
       "1",
@@ -19,7 +19,7 @@ var data= [
   {
     "name": "Eddard Stark",
     "picturelink": "https://vignette.wikia.nocookie.net/iceandfire/images/2/23/Eddard_stark.jpeg/revision/latest?cb=20130214024122",
-    "questions[]": [
+    "questions": [
       "1",
       "5",
       "3",
@@ -35,7 +35,7 @@ var data= [
   {
     "name": "Daenerys Targaryen",
     "picturelink": "https://wallpapersite.com/images/wallpapers/daenerys-targaryen-2880x1800-dragon-fan-art-artwork-hd-9897.jpg",
-    "questions[]": [
+    "questions": [
       "5",
       "1",
       "2",
@@ -51,7 +51,7 @@ var data= [
   {
     "name": "Jon Snow",
     "picturelink": "https://img00.deviantart.net/72b2/i/2015/074/e/5/jon_snow_and_ghost_by_drkujo-d8lsnqh.jpg",
-    "questions[]": [
+    "questions": [
       "1",
       "5",
       "3",
@@ -66,13 +66,11 @@ var data= [
   }
 
 ]
-
-var answers = [
-
-]
+var scores = [];
+var answers = [];
 var newfriend = {  "name": "Jon Snow",
     "picturelink": "https://img00.deviantart.net/72b2/i/2015/074/e/5/jon_snow_and_ghost_by_drkujo-d8lsnqh.jpg",
-    "questions[]": [
+    "questions": [
       "1",
       "5",
       "3",
@@ -87,16 +85,15 @@ var newfriend = {  "name": "Jon Snow",
   }
 
 
-console.log("Name " + newfriend.name);
-console.log("Picture link " + newfriend.picturelink);
+  for (var k = 0; k < data.length; k++){
+    scores.push([data[k].questions]);
 
-console.log("Questions " + newfriend.questions);
-console.log(data[0]);
-for (var k = 0; k < data.length; k++){
-      console.log(data[k].questions);
 
-      // for(var j = 0; j < newfriend.questions.length; j ++){
-      //   totalDifference +=Math.abs(newfriend.questions[j] - data[k].questions[j]);
-      // }
-
-    }
+  }
+answers = []
+console.log("Previous scores: " + scores);
+  for (var j = 0; j < scores.length; j++){
+      var totalDifference = Math.abs(newfriend.questions - scores[j]);
+      console.log("Total Differences " + totalDifference);
+      answers.push(totalDifference[j]);
+  }
