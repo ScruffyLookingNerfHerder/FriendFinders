@@ -95,12 +95,7 @@ var friendsarray = [
       "4",
       "5"
     ]
-  },
-  {
-"name": "Captain John",
-"picturelink": "Biteme",
-"questions": "[\"2\",\"2\",\"2\",\"3\",\"2\",\"2\",\"2\",\"3\",\"3\",\"3\"]"
-}
+  }
 
 ]
 
