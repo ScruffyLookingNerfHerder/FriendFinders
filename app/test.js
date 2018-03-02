@@ -71,29 +71,56 @@ var answers = [];
 var newfriend = {  "name": "Jon Snow",
     "picturelink": "https://img00.deviantart.net/72b2/i/2015/074/e/5/jon_snow_and_ghost_by_drkujo-d8lsnqh.jpg",
     "questions": [
-      "1",
-      "5",
-      "3",
-      "1",
-      "2",
-      "2",
-      "5",
-      "4",
-      "1",
-      "1"
+      1,
+      5,
+      3,
+      1,
+      2,
+      2,
+      5,
+      4,
+      1,
+      1
     ]
   }
 
 
-  for (var k = 0; k < data.length; k++){
-    scores.push([data[k].questions]);
+var friends=[];
 
+    for (var k = 0; k < data.length; k++) {
+      friends.push(data[k]);
+      // var parsed;
+      for (var n = 0; n < data[k].questions.length; n++) {
+        data[k].questions[n] = parseInt(data[k].questions[n]);
 
+      }
+      scores.push(data[k].questions);
+    }
+console.log(scores);
+  answers = newfriend.questions;
+  console.log(answers);
+differences= [];
+for (var l = 0; l < scores.length; l++) {
+  for (var p = 0; p < scores[l].length; p++) {
+    var totalDifference = Math.abs(answers[p] - scores[l][p]);
   }
-answers = []
-console.log("Previous scores: " + scores);
-  for (var j = 0; j < scores.length; j++){
-      var totalDifference = Math.abs(newfriend.questions - scores[j]);
-      console.log("Total Differences " + totalDifference);
-      answers.push(totalDifference[j]);
+
+  differences.push(totalDifference);
+
+}
+console.log(differences);
+var min = Math.min.apply(Math, differences);
+console.log(min);
+function findsmallest(){
+for (var u = 0; u < differences.length; u ++){
+  if (differences[u] == min){
+    return u;
   }
+}
+}
+console.log(friends);
+var index = findsmallest();
+console.log(index);
+// index = parseInt(index);
+console.log(friends[0].name);
+console.log(friends[index].name);
